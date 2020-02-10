@@ -1,0 +1,1030 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<head>
+<title>Using turn.js and the new zoom feature</title>
+<meta name="viewport" content="width = 1050, user-scalable = no" />
+	<link href="https://fonts.googleapis.com/css?family=Alice&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="js/jquery.min.1.7.js"></script>
+<script type="text/javascript" src="js/modernizr.2.5.3.min.js"></script>
+<script type="text/javascript" src="js/hash.js"></script>
+
+</head>
+<body style="background-image:url(images/bgimage-body/main-back.jpg); background-repeat:no-repeat; background-size:cover;">
+
+<div class="magazine-viewport">
+	<div class="container">
+		<div class="magazine">
+			<!-- Next button -->
+			<div ignore="1" class="next-button"></div>
+			<!-- Previous button -->
+			<div ignore="1" class="previous-button"></div>
+
+			<div class="odd main-cont-front">
+				<div class="card-block">
+					<img src="images/page/Pepcus%20Logo%20300by300.png" alt="logo">
+					<h2>Pepcus Software Services Pvt. Ltd.</h2>
+				</div>
+			</div>
+
+			<div class="even main-cont-about">
+				<div class="shadow-even"></div>
+					<div class="content-page">
+						<div class="demo">
+							<h3>About Us</h3>
+						</div>
+					<p>Pepcus is a process driven software development company. As a partner, we breathe life into our customers' business and provide a wealth of deep technical and project management knowledge to ensure the success of their project.</p>
+						<div class="hexagon hexagon2 fig1">
+							<div class="hexagon-in1">
+								<div class="hexagon-in2 figure-1"></div>
+							</div>
+						</div>
+						<div class="hexagon hexagon2 fig2">
+							<div class="hexagon-in1">
+								<div class="hexagon-in2 figure-2"></div>
+							</div>
+						</div>
+						<div class="hexagon hexagon2 fig3">
+							<div class="hexagon-in1">
+								<div class="hexagon-in2 figure-3"></div>
+							</div>
+						</div>
+						<div class="hexagon hexagon2 fig4">
+							<div class="hexagon-in1">
+								<div class="hexagon-in2 figure-4"></div>
+							</div>
+						</div>
+						<div class="hexagon hexagon2 fig5">
+							<div class="hexagon-in1">
+								<div class="hexagon-in2 figure-5"></div>
+							</div>
+						</div>
+						<div class="hexagon hexagon2 fig6">
+							<div class="hexagon-in1">
+								<div class="hexagon-in2 figure-6"></div>
+							</div>
+						</div>
+						<div class="hexagon hexagon2 fig7">
+							<div class="hexagon-in1">
+								<div class="hexagon-in2 figure-7"></div>
+							</div>
+						</div>
+						<div class="hexagon hexagon2 fig8">
+							<div class="hexagon-in1">
+								<div class="hexagon-in2 figure-8"></div>
+							</div>
+						</div>
+						<div class="hexagon hexagon2 fig9">
+							<div class="hexagon-in1">
+								<div class="hexagon-in2 figure-9"></div>
+							</div>
+						</div>
+						<div id="rcorners">
+							<span>2</span>
+						</div>
+					</div>
+			</div>
+
+			<div class="odd main-cont-team">
+				<div class="shadow-odd"></div>
+					<div class="content-page">
+						<div class="demo">
+						<h3>Our Team</h3>
+					</div>
+						<p>Our Exceptional Team Delivers Awesome & Outstanding Results.</p>
+						<div class="team-group-image">
+							<img src="images/flipbook-images/ourteam.png" alt="teampic">
+						</div>
+						<div id="rcorners">
+							<span>3</span>
+						</div>
+					</div>
+			</div>
+
+			<div class="even main-cont-offerings">
+				<div class="shadow-even"></div>
+				<div class="demo">
+					<h3>Our Offerings</h3>
+				</div>
+
+				<div class="info-container">
+					<div class="col-sm-4">
+						<div class="curl"></div>
+							<div class="curlcard demo-card1">
+								<svg id="Layer_3" enable-background="new 0 0 64 64" height="90" viewBox="0 0 64 64" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m9 57h2v2h-2z"/><path d="m13 57h2v2h-2z"/><path d="m56 27c3.859 0 7-3.141 7-7 0-3.537-2.637-6.47-6.048-6.936-.47-4.524-4.306-8.064-8.952-8.064-1.223 0-2.403.256-3.492.715-2.268-2.955-5.759-4.715-9.508-4.715-6.617 0-12 5.383-12 12 0 .027.004.052.005.079-1.505.216-2.856.906-3.894 1.921h-11.111c-2.757 0-5 2.243-5 5v33h-2v5c0 2.757 2.243 5 5 5h46c2.757 0 5-2.243 5-5v-5h-2v-26zm-32.8-11.916c.206 1.177.567 2.318 1.122 3.398l1.779-.914c-.731-1.422-1.101-2.959-1.101-4.568 0-5.514 4.486-10 10-10 3.028 0 5.857 1.376 7.749 3.703-.676.488-1.297 1.063-1.828 1.738l1.572 1.236c1.338-1.701 3.345-2.677 5.507-2.677 3.859 0 7 3.141 7 7v1h1c2.757 0 5 2.243 5 5s-2.243 5-5 5h-32c-2.757 0-5-2.243-5-5 0-2.472 1.808-4.516 4.2-4.916zm-6.12 5.916c.488 3.386 3.401 6 6.92 6h1v6h-14v14h22v-8h14v-12h2v22h-40v-28zm13.92 18v6h-18v-10h12v4zm-4-2v-10h18v10zm28 21c0 1.654-1.346 3-3 3h-46c-1.654 0-3-1.346-3-3v-3h17.22l.999 4h15.562l.999-4h17.22zm-32.719-3h13.439l-.501 2h-12.438zm30.719-2h-48v-33c0-1.654 1.346-3 3-3h9.685c-.297.622-.503 1.294-.605 2h-8.08c-1.103 0-2 .897-2 2v28c0 1.103.897 2 2 2h40c1.103 0 2-.897 2-2v-22h2z"/><path d="m33.675 16h12.649v1.999h-12.649z" transform="matrix(.317 -.949 .949 .317 11.213 49.563)"/><path d="m44.641 22.769 6.921-5.769-6.921-5.769-1.282 1.538 5.079 4.231-5.079 4.231z"/><path d="m36.641 21.231-5.079-4.231 5.079-4.231-1.282-1.538-6.921 5.769 6.921 5.769z"/><path d="m29 29h14v2h-14z"/><path d="m29 33h14v2h-14z"/><path d="m15 37h8v2h-8z"/><path d="m15 41h14v2h-14z"/><path d="m11 29h2v2h-2z"/><path d="m13 25h2v-2h-4v4h2z"/></svg>
+								<p>Custom Web Development</p>
+							</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="curl"></div>
+						<div class="curlcard demo-card2">
+							<svg id="Layer_3" enable-background="new 0 0 64 64" height="90" viewBox="0 0 64 64" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m16 57h8v2h-8z"/><path d="m43 9c-1.37 0-2.707.14-4 .403v-3.403c0-2.757-2.243-5-5-5h-28c-2.757 0-5 2.243-5 5v52c0 2.757 2.243 5 5 5h28c2.757 0 5-2.243 5-5v-9.403c1.293.263 2.63.403 4 .403 11.028 0 20-8.972 20-20s-8.972-20-20-20zm0 38c-2.813 0-5.335-3.478-6.765-8.578 2.107.368 4.375.578 6.765.578s4.658-.21 6.765-.578c-1.43 5.1-3.952 8.578-6.765 8.578zm-17.25-12.888c1.942 1.661 4.812 2.998 8.287 3.851.853 3.475 2.19 6.344 3.851 8.287-5.819-1.728-10.41-6.319-12.138-12.138zm24.015-14.534c-2.107-.368-4.375-.578-6.765-.578s-4.658.21-6.765.578c1.43-5.099 3.952-8.578 6.765-8.578s5.335 3.479 6.765 8.578zm-11.877-7.828c-1.661 1.942-2.998 4.812-3.851 8.287-3.475.853-6.344 2.19-8.287 3.851 1.728-5.819 6.319-10.41 12.138-12.138zm-4.31 10.485c-.368 2.107-.578 4.375-.578 6.765s.21 4.658.578 6.765c-5.1-1.43-8.578-3.952-8.578-6.765s3.478-5.335 8.578-6.765zm-.578-10.529c-5.968 3.465-10 9.911-10 17.294s4.032 13.829 10 17.294v6.706h-26v-46h26zm10 25.294c-2.577 0-5.041-.261-7.283-.717-.456-2.242-.717-4.706-.717-7.283s.261-5.041.717-7.283c2.242-.456 4.706-.717 7.283-.717s5.041.261 7.283.717c.456 2.242.717 4.706.717 7.283s-.261 5.041-.717 7.283c-2.242.456-4.706.717-7.283.717zm9.422-14.765c5.099 1.43 8.578 3.952 8.578 6.765s-3.479 5.335-8.578 6.765c.368-2.107.578-4.375.578-6.765s-.21-4.658-.578-6.765zm7.828 1.653c-1.942-1.661-4.812-2.998-8.287-3.851-.853-3.475-2.19-6.344-3.851-8.287 5.819 1.728 10.41 6.319 12.138 12.138zm-23.25 34.112c0 1.654-1.346 3-3 3h-28c-1.654 0-3-1.346-3-3v-52c0-1.654 1.346-3 3-3h28c1.654 0 3 1.346 3 3v3.922c-.684.216-1.349.474-2 .759v-4.681c0-.552-.448-1-1-1h-28c-.552 0-1 .448-1 1v48c0 .552.448 1 1 1h28c.552 0 1-.448 1-1v-6.682c.651.285 1.316.543 2 .759zm11.112-11.75c1.661-1.942 2.998-4.812 3.851-8.287 3.475-.853 6.344-2.19 8.287-3.851-1.728 5.819-6.319 10.41-12.138 12.138z"/></g></svg>
+							<p>Mobile Development</p>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="curl"></div>
+						<div class="curlcard demo-card3">
+							<svg id="Layer_5" enable-background="new 0 0 64 64" height="90" viewBox="0 0 64 64" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m32 25c4.962 0 9-4.037 9-9s-4.038-9-9-9-9 4.037-9 9 4.038 9 9 9zm0-16c3.86 0 7 3.141 7 7s-3.14 7-7 7-7-3.141-7-7 3.14-7 7-7z"/><path d="m32 21c2.757 0 5-2.243 5-5s-2.243-5-5-5-5 2.243-5 5 2.243 5 5 5zm0-8c1.654 0 3 1.346 3 3s-1.346 3-3 3-3-1.346-3-3 1.346-3 3-3z"/><path d="m61 53v-31c0-2.757-2.243-5-5-5h-9v-4.784l-2.794-.687c-.123-.332-.262-.664-.416-.994l1.492-2.467-5.351-5.351-2.466 1.493c-.331-.154-.663-.293-.995-.416l-.686-2.794h-7.568l-.687 2.794c-.332.123-.664.262-.995.416l-2.466-1.492-5.352 5.352 1.493 2.466c-.154.33-.293.662-.417.994l-2.792.686v4.784h-9c-2.757 0-5 2.243-5 5v31h-2v5c0 2.757 2.243 5 5 5h52c2.757 0 5-2.243 5-5v-5zm-42-39.216 2.345-.577.17-.534c.182-.572.425-1.153.722-1.728l.258-.498-1.255-2.073 3.134-3.133 2.073 1.255.499-.259c.574-.298 1.154-.541 1.725-.722l.536-.169.577-2.346h4.432l.577 2.347.536.169c.571.181 1.151.424 1.725.722l.499.259 2.073-1.255 3.134 3.134-1.255 2.072.258.498c.297.572.54 1.153.722 1.728l.17.534 2.345.576v4.432l-2.345.577-.17.534c-.182.574-.425 1.155-.722 1.728l-.258.498 1.255 2.072-3.134 3.134-2.073-1.255-.499.259c-.574.298-1.154.541-1.725.722l-.536.169-.577 2.346h-4.432l-.577-2.345-.534-.17c-.573-.182-1.154-.425-1.727-.723l-.499-.259-2.073 1.255-3.134-3.134 1.255-2.072-.258-.498c-.297-.572-.54-1.153-.722-1.728l-.17-.534-2.345-.576zm5.069 15.498 2.466-1.492c.33.154.662.293.995.416l.686 2.794h7.568l.687-2.794c.332-.123.664-.262.995-.416l2.466 1.492 5.351-5.351-.564-.931h10.281v26h-46v-26h10.281l-.564.932zm-19.069-7.282c0-1.654 1.346-3 3-3h9v.784l2.794.687c.065.177.147.353.221.529h-11.015c-1.103 0-2 .897-2 2v26c0 1.103.897 2 2 2h46c1.103 0 2-.897 2-2v-26c0-1.103-.897-2-2-2h-11.015c.074-.177.156-.353.221-.529l2.794-.687v-.784h9c1.654 0 3 1.346 3 3v31h-54zm56 36c0 1.654-1.346 3-3 3h-52c-1.654 0-3-1.346-3-3v-3h58z"/><path d="m5 57h2v2h-2z"/><path d="m9 57h2v2h-2z"/><path d="m13 57h2v2h-2z"/><path d="m13 39c0 4.411 3.589 8 8 8s8-3.589 8-8c0-1.189-.268-2.315-.736-3.331l2.36-1.888-1.249-1.562-2.173 1.738c-1.467-1.802-3.702-2.957-6.202-2.957-4.411 0-8 3.589-8 8zm8-6c1.87 0 3.542.86 4.643 2.205l-5.569 4.455-2.367-2.367-1.414 1.414 3.633 3.633 6.713-5.37c.229.635.361 1.317.361 2.03 0 3.309-2.691 6-6 6s-6-2.691-6-6 2.691-6 6-6z"/><path d="m43 47c4.411 0 8-3.589 8-8s-3.589-8-8-8-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"/><path d="m40.707 42.707 2.293-2.293 2.293 2.293 1.414-1.414-2.293-2.293 2.293-2.293-1.414-1.414-2.293 2.293-2.293-2.293-1.414 1.414 2.293 2.293-2.293 2.293z"/></svg>
+							<p>Software Testing & Automation</p>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="curl"></div>
+						<div class="curlcard demo-card4">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512" height="90"><g id="Outline"><path d="M48.16,44.4l-2.244,1.3A8,8,0,0,0,44,44.587V42H38v2.587a8,8,0,0,0-1.916,1.11L36,45.649V40c0-2.748-5.7-4-11-4s-11,1.252-11,4V58c0,2.748,5.7,4,11,4,5.045,0,10.445-1.138,10.95-3.62l.134-.077A8,8,0,0,0,38,59.413V62h6V59.413a8,8,0,0,0,1.916-1.11l2.244,1.3,3-5.2-2.241-1.294a7.605,7.605,0,0,0,0-2.214L51.16,49.6Zm-14.32,0-1.481,2.565A23.119,23.119,0,0,1,25,48c-5.851,0-8.85-1.46-9-2V42.433c.014.007.031.012.045.019q.361.178.773.335c.073.028.153.053.229.081.212.076.43.149.657.217.108.032.217.062.328.092q.325.09.667.169c.109.026.217.052.328.075q.428.092.874.168l.168.031q.534.087,1.09.154l.32.034c.271.03.543.057.819.079.129.011.258.021.388.03.269.018.539.034.81.046l.355.016c.384.013.767.021,1.149.021s.765-.008,1.149-.021l.355-.016c.271-.012.541-.028.81-.046.13-.009.259-.019.388-.03.276-.022.548-.049.819-.079l.32-.034q.555-.068,1.09-.154l.168-.031q.447-.077.874-.168c.111-.023.219-.049.328-.075q.342-.079.667-.169c.111-.03.22-.06.328-.092.227-.068.445-.141.657-.217.076-.028.156-.053.229-.081q.411-.156.773-.335c.014-.007.031-.012.045-.019v2.061ZM25,38c.364,0,.717.006,1.06.016.121,0,.233.012.352.017.215.009.432.017.638.03.169.011.327.026.49.039.145.012.3.022.435.035.2.019.382.042.569.064.095.012.2.021.287.033.246.032.479.068.707.1l.08.011c2.776.461,4.234,1.258,4.377,1.647a.343.343,0,0,1-.026.05.433.433,0,0,1-.038.062c-.015.018-.037.037-.055.056s-.047.05-.079.077-.051.038-.076.057-.076.058-.123.089c-.029.019-.066.039-.1.059-.053.032-.1.064-.166.1-.037.02-.082.04-.121.06-.068.035-.134.069-.211.1l-.141.06c-.083.035-.164.071-.256.107-.051.02-.11.04-.164.06-.1.036-.193.072-.3.107-.062.021-.132.041-.2.062-.109.034-.215.069-.332.1-.075.022-.158.042-.236.063-.118.032-.234.064-.36.095-.089.022-.187.042-.28.063-.125.029-.247.058-.379.085-.107.022-.223.041-.335.062-.13.024-.257.05-.393.072s-.262.039-.393.059-.26.041-.4.059-.3.035-.454.052c-.136.015-.267.032-.407.046-.17.016-.351.028-.528.042-.133.01-.26.023-.4.032-.223.014-.457.023-.691.032-.1,0-.2.011-.3.015-.343.01-.7.016-1.06.016-.731,0-1.418-.023-2.06-.064-4.48-.286-6.791-1.455-6.937-1.931C16.183,39.445,19.179,38,25,38ZM16,48.427C18.127,49.5,21.642,50,25,50a29.432,29.432,0,0,0,5.934-.564l-.094.163,2.241,1.294A7.739,7.739,0,0,0,33,52c0,.225.029.456.05.685A20.442,20.442,0,0,1,25,54c-5.851,0-8.85-1.46-9-2h0ZM16,58V54.433C18.129,55.5,21.646,56,25,56a28.431,28.431,0,0,0,6.376-.671l1.878,3.255C32.023,59.22,29.277,60,25,60,19.149,60,16.15,58.54,16,58Zm30.831-7.389a5.793,5.793,0,0,1,0,2.778l-.171.724,1.768,1.021-1,1.732-1.769-1.021-.542.51a6.014,6.014,0,0,1-2.4,1.393L42,57.96V60H40V57.96l-.715-.212a6.014,6.014,0,0,1-2.4-1.393l-.542-.51-1.769,1.021-1-1.732,1.768-1.021-.171-.724a5.793,5.793,0,0,1,0-2.778l.171-.724-1.768-1.021,1-1.732,1.769,1.021.542-.51a6.014,6.014,0,0,1,2.4-1.393L40,46.04V44h2v2.04l.715.212a6.014,6.014,0,0,1,2.4,1.393l.542.51,1.769-1.021,1,1.732L46.66,49.887Z"/><path d="M41,48a4,4,0,1,0,4,4A4,4,0,0,0,41,48Zm0,6a2,2,0,1,1,2-2A2,2,0,0,1,41,54Z"/><path d="M38,2H26V22H38ZM36,4V16H28V4ZM32,20H28V18h8v2Z"/><path d="M33,19a1.05,1.05,0,0,0-.29-.71,1.018,1.018,0,0,0-.91-.27.636.636,0,0,0-.18.06.782.782,0,0,0-.181.09,1.7,1.7,0,0,0-.149.12A1.045,1.045,0,0,0,31,19a1,1,0,1,0,2,0Z"/><polygon points="13 24 11 24 11 30 31 30 31 34 33 34 33 30 53 30 53 24 51 24 51 28 33 28 33 24 31 24 31 28 13 28 13 24"/><path d="M8,20H6v2H18V20H16V18h6V2H2V18H8Zm6,0H10V18h4ZM4,4H20v8H4ZM4,16V14H20v2Z"/><path d="M42,22H62V2H42Zm18-2H44V10H60ZM44,4H60V8H44Z"/><path d="M46.55,5.17a.568.568,0,0,0-.17-.09.609.609,0,0,0-.191-.06,1,1,0,0,0-.9.27,1.032,1.032,0,0,0-.21.33.99.99,0,0,0,.21,1.09,1.155,1.155,0,0,0,.33.21.942.942,0,0,0,.76,0,1.169,1.169,0,0,0,.33-.21A.994.994,0,0,0,47,6a1.05,1.05,0,0,0-.29-.71A1,1,0,0,0,46.55,5.17Z"/><path d="M49.71,5.29a1.047,1.047,0,0,0-1.42,0,1.032,1.032,0,0,0-.21.33A1,1,0,0,0,48,6a.838.838,0,0,0,.08.38,1.169,1.169,0,0,0,.21.33.99.99,0,0,0,1.09.21,1.169,1.169,0,0,0,.33-.21,1.169,1.169,0,0,0,.21-.33.942.942,0,0,0,0-.76A1.155,1.155,0,0,0,49.71,5.29Z"/><path d="M52.71,5.29a1.169,1.169,0,0,0-.33-.21.949.949,0,0,0-.58-.06.636.636,0,0,0-.18.06.782.782,0,0,0-.181.09,1.7,1.7,0,0,0-.149.12.933.933,0,0,0-.21.33.943.943,0,0,0,0,.76,1.169,1.169,0,0,0,.21.33,1.155,1.155,0,0,0,.33.21A1,1,0,0,0,52,7a1.033,1.033,0,0,0,.71-.29,1.169,1.169,0,0,0,.21-.33.942.942,0,0,0,0-.76A.933.933,0,0,0,52.71,5.29Z"/></g></svg>
+							<p>Startup Software Development</p>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="curl"></div>
+						<div class="curlcard demo-card5">
+							<svg height="90" viewBox="0 -4 488.82506 488" width="488pt" xmlns="http://www.w3.org/2000/svg"><path d="m410.058594 310.285156c14.191406-10.964844 22.429687-27.941406 22.261718-45.871094 1.027344-29.796874-22.210937-54.820312-52-56-11.917968.035157-23.421874 4.378907-32.390624 12.230469-12.820313 11.417969-19.984376 27.886719-19.601563 45.046875.382813 17.164063 8.277344 33.292969 21.59375 44.128906.109375.089844.238281.144532.351563.230469-22.019532 9.171875-40.355469 25.414063-52.121094 46.160157-7.246094-5.855469-15.335938-10.582032-24-14.015626 4.121094-3.113281 7.777344-6.800781 10.847656-10.949218 7.425781-10.089844 11.394531-22.308594 11.320312-34.832032-.035156-29.390624-22.695312-53.792968-52-56-26.164062.671876-47.90625 20.363282-51.160156 46.335938-.566406 3.1875-.847656 6.421875-.839844 9.664062-.167968 17.882813 8.03125 34.820313 22.160157 45.78125-8.660157 3.4375-16.753907 8.160157-24 14.015626-11.324219-19.878907-28.640625-35.675782-49.480469-45.125 14.832031-10.898438 23.511719-28.269532 23.320312-46.671876 1.027344-29.796874-22.210937-54.820312-52-56-29.789062 1.179688-53.027343 26.203126-52 56-.144531 17.394532 7.609376 33.914063 21.082032 44.917969-44.113282 15.746094-76.679688 68.464844-76.679688 131.082031 0 4.417969 3.582032 8 8 8h130.078125c-1.140625 7.949219-1.742187 15.96875-1.800781 24 0 4.417969 3.582031 8 8 8h190.640625c4.417969 0 8-3.582031 8-8-.054687-8.03125-.65625-16.050781-1.800781-24h130.082031c4.417969 0 8-3.582031 8-8 0-61.289062-31.167969-113.195312-73.863281-130.128906zm-65.738282-45.871094c-.1875-12.101562 4.949219-23.671874 14.046876-31.648437 6.074218-5.339844 13.867187-8.308594 21.953124-8.351563 20.949219 1.183594 37.023438 19.039063 36 40 1.023438 20.957032-15.050781 38.816407-36 40-7.46875 0-14.714843-2.539062-20.550781-7.203124-9.921875-7.972657-15.621093-20.070313-15.449219-32.796876zm-136 32c-.003906-2.351562.203126-4.699218.625-7.007812 2.011719-18.234375 17.046876-32.257812 35.375-32.992188 18.390626.761719 33.453126 14.871094 35.410157 33.175782.402343 2.25.601562 4.535156.589843 6.824218.066407 9.105469-2.808593 17.992188-8.199218 25.335938-6.375 9.066406-16.714844 14.523438-27.800782 14.664062-20.949218-1.183593-37.019531-19.042968-36-40zm-96-72c20.949219 1.183594 37.023438 19.039063 36 40 1.023438 20.957032-15.050781 38.816407-36 40-20.949218-1.183593-37.019531-19.042968-36-40-1.019531-20.960937 15.050782-38.816406 36-40zm33.304688 208h-124.710938c3.03125-62.449218 41.246094-112 87.808594-112 27.375 0 53.160156 17.519532 69.847656 47.109376-16.355468 18.453124-27.699218 40.796874-32.945312 64.890624zm11.566406 32c.355469-7.558593 1.253906-15.078124 2.679688-22.503906 4.296875-25.378906 16.167968-48.859375 34.050781-67.371094.210937-.203124.40625-.417968.589844-.648437 13.160156-13.390625 31.039062-21.101563 49.808593-21.476563 18.769532.371094 36.648438 8.074219 49.808594 21.460938.1875.234375.390625.457031.609375.664062 17.882813 18.519532 29.746094 42.011719 34.039063 67.394532 1.421875 7.417968 2.316406 14.933594 2.671875 22.480468zm185.824219-32c-5.238281-24.09375-16.582031-46.433593-32.941406-64.882812 16.6875-29.597656 42.472656-47.117188 69.847656-47.117188 46.558594 0 84.800781 49.550782 87.808594 112zm0 0"/><path d="m151.335938 131.132812 21.863281 2.734376-13.535157 17.402343c-3.875 5.011719-3.429687 12.117188 1.039063 16.605469l20.152344 20.152344c4.496093 4.46875 11.605469 4.910156 16.617187 1.03125l17.382813-13.527344 2.738281 21.882812c.808594 6.277344 6.148438 10.984376 12.480469 11h28.496093c6.332032-.015624 11.675782-4.726562 12.480469-11.007812l2.734375-21.875 17.390625 13.539062c5.011719 3.878907 12.125 3.433594 16.609375-1.042968l20.160156-20.160156c4.464844-4.492188 4.902344-11.597657 1.023438-16.605469l-13.527344-17.394531 21.863282-2.734376c6.289062-.789062 11.007812-6.132812 11.015624-12.472656v-28.496094c-.011718-6.335937-4.726562-11.679687-11.015624-12.472656l-21.863282-2.734375 13.535156-17.402343c3.875-5.007813 3.429688-12.117188-1.039062-16.605469l-20.152344-20.152344c-4.492187-4.476563-11.605468-4.917969-16.617187-1.03125l-17.382813 13.527344-2.734375-21.878907c-.808593-6.28125-6.148437-10.988281-12.480469-11h-28.496093c-6.335938.011719-11.675781 4.722657-12.480469 11.007813l-2.738281 21.871094-17.390625-13.535157c-5.011719-3.878906-12.121094-3.433593-16.609375 1.039063l-20.160157 20.160156c-4.460937 4.492188-4.902343 11.601563-1.023437 16.609375l13.527344 17.390625-21.863281 2.734375c-6.289063.789063-11.007813 6.136719-11.015626 12.472656v28.496094c.007813 6.339844 4.726563 11.683594 11.015626 12.472656zm4.984374-37.921874 24.160157-3.015626c3.035156-.378906 5.589843-2.457031 6.578125-5.351562.820312-2.398438 1.796875-4.742188 2.925781-7.015625 1.355469-2.75 1.019531-6.03125-.863281-8.449219l-14.96875-19.199218 15.878906-15.925782 19.203125 14.949219c2.414063 1.882813 5.691406 2.222656 8.4375.875 2.28125-1.128906 4.628906-2.105469 7.03125-2.929687 2.894531-.988282 4.972656-3.542969 5.355469-6.574219l3.0625-24.160157h22.398437l3.015625 24.160157c.382813 3.03125 2.460938 5.585937 5.355469 6.574219 2.402344.824218 4.75 1.800781 7.03125 2.929687 2.753906 1.359375 6.042969 1.023437 8.464844-.867187l19.199219-14.949219 15.878906 15.871093-14.96875 19.199219c-1.882813 2.417969-2.214844 5.699219-.863282 8.449219 1.128907 2.269531 2.105469 4.613281 2.929688 7.015625.988281 2.894531 3.539062 4.972656 6.574219 5.351563l24.183593 3.0625v22.402343l-24.160156 3.015625c-3.035156.378906-5.585937 2.457032-6.574218 5.351563-.824219 2.398437-1.800782 4.742187-2.929688 7.015625-1.351562 2.75-1.015625 6.03125.863281 8.449218l14.96875 19.199219-15.878906 15.929688-19.199219-14.953125c-2.414062-1.882813-5.691406-2.21875-8.441406-.871094-2.277344 1.125-4.628906 2.101562-7.03125 2.925781-2.894531.988281-4.972656 3.542969-5.351562 6.578125l-3.066407 24.160156h-22.398437l-3.015625-24.160156c-.378907-3.035156-2.457031-5.589844-5.351563-6.578125-2.40625-.824219-4.753906-1.800781-7.03125-2.925781-2.75-1.347656-6.027344-1.011719-8.441406.871094l-19.199219 14.953125-15.882812-15.875 14.96875-19.199219c1.882812-2.417969 2.21875-5.699219.863281-8.449219-1.125-2.269531-2.105469-4.613281-2.925781-7.015625-.988281-2.894531-3.542969-4.96875-6.578125-5.351562l-24.207032-3.070313zm0 0"/><path d="m244.320312 152.414062c26.511719 0 48-21.492187 48-48 0-26.511718-21.488281-48-48-48-26.507812 0-48 21.488282-48 48 .027344 26.496094 21.503907 47.972657 48 48zm0-80c17.675782 0 32 14.324219 32 32 0 17.671876-14.324218 32-32 32-17.671874 0-32-14.328124-32-32 0-17.675781 14.328126-32 32-32zm0 0"/><path d="m53.042969 223.347656c1.199219 0 2.386719-.273437 3.46875-.800781 2-.957031 3.523437-2.691406 4.21875-4.796875 1.140625-3.59375-.144531-5.914062-2.707031-10.546875-5.742188-10.398437-23.199219-42-12.605469-67.78125 6.046875-14.679687 46.582031-26.53125 68.359375-32.898437 4.992187-1.453126 9.488281-2.765626 13.167968-3.949219 3.3125-1.070313 5.554688-4.160157 5.542969-7.640625l-.167969-62.519532c-.15625-2.425781-1.371093-4.65625-3.320312-6.105468-2.003906-1.507813-4.554688-2.089844-7.015625-1.601563-45.496094 9.195313-99.671875 24-114.816406 56.800781-26.230469 56.800782 27.105469 126.792969 38.6875 138.214844 1.832031 2.101563 4.410156 3.402344 7.1875 3.625zm-22.402344-90.070312c-3.273437 8.125-4.820313 16.84375-4.542969 25.597656-9.433594-22.109375-14.777344-48.140625-4.367187-70.65625 12.109375-26.277344 66.398437-40 94.636719-46.023438l.136718 46.777344c-2.238281.671875-4.648437 1.375-7.199218 2.113282-36.742188 10.765624-70.390626 22.070312-78.6875 42.191406zm0 0"/><path d="m361.863281 102.523438c3.683594 1.183593 8.1875 2.496093 13.179688 3.953124 21.773437 6.398438 62.308593 18.214844 68.359375 32.894532 10.621094 25.777344-6.867188 57.386718-12.601563 67.769531-2.566406 4.648437-3.855469 6.976563-2.703125 10.566406.6875 2.101563 2.195313 3.835938 4.183594 4.800781 1.078125.527344 2.257812.800782 3.457031.800782 2.773438-.179688 5.367188-1.457032 7.199219-3.550782 11.597656-11.417968 64.976562-81.402343 38.703125-138.234374-15.144531-32.832032-69.320313-47.605469-114.816406-56.800782l-.742188-.148437c-2.351562-.480469-4.792969.117187-6.652343 1.632812-1.859376 1.515625-2.941407 3.78125-2.949219 6.179688l-.160157 62.496093c-.011718 3.484376 2.230469 6.574219 5.542969 7.640626zm10.609375-60.304688c27.558594 5.859375 82.449219 19.59375 94.648438 46.042969 10.398437 22.503906 5.046875 48.527343-4.375 70.648437.273437-8.757812-1.277344-17.476562-4.554688-25.601562-8.292968-20.121094-41.941406-31.425782-78.671875-42.160156-2.542969-.734376-4.949219-1.441407-7.199219-2.113282zm0 0"/></svg>
+							<p>outsourcing Partnership</p>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="curl"></div>
+						<div class="curlcard demo-card6">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="100" height="90"><g id="Maintenance_tools" data-name="Maintenance tools"><path d="M53.476,26.405A2.993,2.993,0,0,0,52.9,23a3.073,3.073,0,0,0-4.242,0l-.706.707-1-1,1.6-1.6a3.111,3.111,0,0,1,2.717-.814,9.074,9.074,0,0,0,7.706-2.538A8.974,8.974,0,0,0,60.9,7.879a1,1,0,0,0-1.628-.318L54.4,12.429l-2.356-.471L51.571,9.6l4.868-4.869A1,1,0,0,0,56.121,3.1a9,9,0,0,0-12.415,9.634,3.123,3.123,0,0,1-.815,2.714l-1.6,1.6-6.662-6.663L33.283,7.7a1,1,0,0,0-.408-.427L26.516,3.746a1,1,0,0,0-1.193.167l-1.41,1.41a1,1,0,0,0-.167,1.192l3.53,6.36a1,1,0,0,0,.426.409l2.686,1.347,6.661,6.662-1.6,1.6a3.111,3.111,0,0,1-2.717.814A9.006,9.006,0,0,0,23.1,36.121a1,1,0,0,0,1.628.318l4.87-4.868,2.356.471.471,2.357-4.868,4.869a1,1,0,0,0,.318,1.628,9,9,0,0,0,12.415-9.634,3.123,3.123,0,0,1,.815-2.714l1.6-1.6,1,1L43,28.657a2.992,2.992,0,0,0,3.407,4.821l5.906,5.907a5,5,0,1,0,7.072-7.071ZM31.687,13.1a.99.99,0,0,0-.258-.187l-2.554-1.281L25.86,6.2,26.2,5.86l5.431,3.015,1.281,2.553a.972.972,0,0,0,.187.259l6.776,6.777-1.416,1.415ZM39.7,27.133a5.1,5.1,0,0,0-1.379,4.426,7.005,7.005,0,0,1-8.16,7.941l4.066-4.065a1,1,0,0,0,.273-.9L33.788,31A1,1,0,0,0,33,30.212l-3.535-.707a1,1,0,0,0-.9.273L24.5,33.843a7.006,7.006,0,0,1,7.938-8.16,5.167,5.167,0,0,0,4.428-1.378l7.439-7.438a5.1,5.1,0,0,0,1.379-4.426A7.005,7.005,0,0,1,53.844,4.5L49.778,8.565a1,1,0,0,0-.273.9L50.212,13a1,1,0,0,0,.784.784l3.535.707a1,1,0,0,0,.9-.273L59.5,10.157a7.006,7.006,0,0,1-7.938,8.16A5.164,5.164,0,0,0,47.134,19.7Zm5.842-3.012,1,1L45.12,26.536l-1-1Zm-1.123,7.364a1,1,0,0,1,0-1.414l5.657-5.657a1,1,0,1,1,1.414,1.415l-5.658,5.657A1.023,1.023,0,0,1,44.414,31.485Zm13.557,6.486a3.005,3.005,0,0,1-4.243,0l-5.779-5.779,4.243-4.242,5.779,5.778a3,3,0,0,1,0,4.243Z"/><path d="M61.148,44.9a3.995,3.995,0,0,0-5.458-1.469l-9.751,5.629a3.964,3.964,0,0,0-2.259-1.629l-14.92-4a7,7,0,0,0-3.51-.03L20,44.719V43a1,1,0,0,0-1-1H11a1,1,0,0,0-1,1v1H3a1,1,0,0,0-1,1V59a1,1,0,0,0,1,1h7v1a1,1,0,0,0,1,1h8a1,1,0,0,0,1-1V59.618l1.286.643a7.027,7.027,0,0,0,3.13.739H39.393a7.011,7.011,0,0,0,3.5-.938l16.8-9.7A4.011,4.011,0,0,0,61.148,44.9ZM4,58V46h6V58Zm14,2H12V44h6ZM58.69,48.634l-16.8,9.7a5,5,0,0,1-2.5.67H24.416a5.027,5.027,0,0,1-2.235-.528L20,57.382v-10.6l5.734-1.434a5.025,5.025,0,0,1,2.508.021l14.92,4a2,2,0,1,1-1.035,3.863L30.2,50.034a1,1,0,0,0-.517,1.932l11.925,3.2a4.043,4.043,0,0,0,1.042.138,3.952,3.952,0,0,0,3.965-4.317l10.072-5.815a2.035,2.035,0,0,1,2.726.732A2.008,2.008,0,0,1,58.69,48.634Z"/></g></svg>
+							<p>Support & Maintenance</p>
+						</div>
+					</div>
+				</div>
+					<div id="rcorners">
+						<span>4</span>
+					</div>
+			</div>
+
+			<div class="odd main-cont-tech">
+				<div class="shadow-odd"></div>
+				<div class="content-page">
+					<div class="main-border">
+						<h1>Our Technical Expertise</h1>
+					</div>
+					<div id="rcorners">
+						<span>5</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="even main-cont-webdev">
+				<div class="shadow-even"></div>
+					<div class="content-page services">
+						<div class="demo">
+							<h3>Web Application Development Tools</h3>
+						</div>
+						<div class="info-container-logos">
+							<ul>
+							<div class="sticker j2ee">
+								<div>
+									<img src="images/tech-expertise/j2ee1.png">
+								</div>
+							</div>
+
+							<div class="sticker js">
+								<div>
+									<img src="images/tech-expertise/jsp-icon.png">
+								</div>
+							</div>
+
+							<div class="sticker jsf">
+								<div>
+									<img src="images/tech-expertise/jsf-new.png">
+								</div>
+							</div>
+							</ul>
+							<ul>
+								<div class="sticker">
+									<div>
+										<img src="images/tech-expertise/prime.png">
+									</div>
+								</div>
+
+								<div class="sticker js">
+									<div>
+										<img src="images/tech-expertise/struts-icon-3.png">
+									</div>
+								</div>
+
+								<div class="sticker js">
+									<div>
+										<img src="images/tech-expertise/php1.png">
+									</div>
+								</div>
+							</ul>
+						</div>
+					</div>
+					<div id="rcorners">
+						<span>6</span>
+					</div>
+			</div>
+
+			<div class="odd main-cont-restapi">
+				<div class="shadow-odd"></div>
+					<div class="content-page">
+						<div class="demo">
+							<h3>REST/API Development Tools</h3>
+						</div>
+						<div class="info-container rest-api">
+							<ul>
+								<div class="sticker">
+									<div>
+										<span>JAX-RS</span>
+									</div>
+								</div>
+								<div class="sticker">
+									<div>
+										<span>Spring Rest</span>
+									</div>
+								</div>
+								<div class="sticker">
+									<div>
+										<span>Jersey</span>
+									</div>
+								</div>
+							</ul>
+						</div>
+					</div>
+						<div id="rcorners">
+							<span>7</span>
+						</div>
+			</div>
+
+			<div class="even main-cont-uidev">
+				<div class="shadow-even"></div>
+				<div class="content-page-ui">
+					<div class="demo">
+						<h3>UI Development Frameworks</h3>
+					</div>
+					<div class="info-container-ui">
+						<ul>
+							<div class="sticker">
+								<div>
+									<img src="images/tech-expertise/angular-icon.png">
+								</div>
+							</div>
+							<div class="sticker react">
+								<div>
+									<img src="images/tech-expertise/react-icon-neww.png">
+								</div>
+							</div>
+							<div class="sticker">
+								<div>
+									<img src="images/tech-expertise/angularjs.png">
+								</div>
+							</div>
+						</ul>
+						<ul>
+							<div class="sticker backbone">
+								<div>
+									<img src="images/tech-expertise/new-bacbone.png">
+								</div>
+							</div>
+							<div class="sticker nodejs">
+								<div>
+									<img src="images/tech-expertise/nodejs-icon-10.png">
+								</div>
+							</div>
+							<div class="sticker python">
+								<div>
+									<img src="images/tech-expertise/python1.png">
+								</div>
+							</div>
+						</ul>
+						<ul>
+							<div class="sticker">
+								<div>
+									<img src="images/tech-expertise/jquery-icon-4.png">
+								</div>
+							</div>
+							<div class="sticker">
+								<div>
+									<img src="images/tech-expertise/css3-icon.png">
+								</div>
+							</div>
+							<div class="sticker bootstrap">
+								<div>
+									<img src="images/tech-expertise/bootstrap1.png">
+								</div>
+							</div>
+						</ul>
+					</div>
+
+				</div>
+					<div id="rcorners">
+						<span>8</span>
+					</div>
+				</div>
+
+			<div class="odd main-cont-dbcode">
+				<div class="shadow-odd"></div>
+				<div class="content-page">
+					<div class="demo">
+						<h3>Rich Experience with multiple DB Tools</h3>
+					</div>
+					<div class="info-container">
+						<ul>
+							<div class="sticker postgre">
+								<div>
+									<img src="images/tech-expertise/postgresql.png">
+								</div>
+							</div>
+							<div class="sticker">
+								<div>
+									<img src="images/tech-expertise/oracle.png">
+								</div>
+							</div>
+							<div class="sticker sqlserver">
+								<div>
+									<img src="images/tech-expertise/sqlserver.png">
+								</div>
+							</div>
+						</ul>
+					</div>
+					<div class="demo1">
+						<h3>Code Management Tools</h3>
+					</div>
+					<div class="info-container-row2">
+						<ul>
+							<div class="sticker github">
+								<div>
+									<img src="images/tech-expertise/new-github.png">
+								</div>
+							</div>
+							<div class="sticker bitbucket">
+								<div>
+									<img src="images/tech-expertise/new-bitbucket.png">
+								</div>
+							</div>
+							<div class="sticker cvs">
+								<div>
+									<img src="images/tech-expertise/cvs.png">
+								</div>
+							</div>
+						</ul>
+					</div>
+					<div id="rcorners">
+						<span>9</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="even main-cont-testingapi">
+				<div class="shadow-even"></div>
+				<div class="content-page">
+					<div class="demo">
+						<h3>Automation Testing Tools</h3>
+					</div>
+					<div class="info-container">
+						<ul>
+							<div class="sticker selenium">
+								<div>
+									<img src="images/tech-expertise/new-selenium.png">
+								</div>
+							</div>
+							<div class="sticker jenkins">
+								<div>
+									<img src="images/tech-expertise/jenkins11.png">
+								</div>
+							</div>
+							<div class="sticker saucelabs">
+								<div>
+									<img src="images/tech-expertise/saucelabs.png">
+								</div>
+							</div>
+						</ul>
+					</div>
+					<div class="demo1">
+						<h3>API Documentation using Advance Tools</h3>
+					</div>
+
+					<div class="info-container-row2">
+						<ul>
+							<div class="sticker">
+								<div>
+									<img src="images/tech-expertise/swaggerr.png">
+								</div>
+							</div>
+							<div class="sticker">
+								<div>
+									<img src="images/tech-expertise/postman.png">
+								</div>
+							</div>
+						</ul>
+
+					</div>
+					<div id="rcorners">
+						<span>10</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="odd main-cont-blocks">
+				<div class="shadow-odd"></div>
+				<div class="content-page service-cards">
+					<div class="card-content services">
+						<div class="card">
+							<h4>Salesforce Cloud Computing Solutions</h4>
+							<div class="card-image">
+							<img src="images/tech-expertise/salesforcecrop.png">
+							</div>
+						</div>
+
+						<div class="card">
+							<h4>Advance Security Solutions</h4>
+							<div class="card-image">
+								<img src="images/tech-expertise/autho.png">
+							</div>
+						</div>
+					</div>
+
+					<div class="card-content services">
+						<div class="card">
+							<h4>Integration Platform</h4>
+							<div class="card-image">
+								<img src="images/tech-expertise/mulesoftt.png">
+							</div>
+						</div>
+
+						<div class="card">
+							<h4>Advance Modules of Spring</h4>
+							<div class="card-image">
+								<img src="images/tech-expertise/springg.png">
+							</div>
+						</div>
+					</div>
+				</div>
+
+					<div id="rcorners">
+						<span>11</span>
+					</div>
+			</div>
+
+			<div class="even main-cont-culture">
+				<div class="shadow-even"></div>
+				<div class="content-page">
+					<div class="demo">
+						<h3>Our Workplace</h3>
+					</div>
+
+					<p>Let's Get on to your Dream Workplace!</p>
+                    <div class="culture-image-container">
+                        <div class="culture-images1">
+                            <img src="images/office-images/image1.jpg">
+                        </div>
+                        <div class="culture-images2">
+                            <img src="images/office-images/image2.jpg">
+                        </div>
+                        <div class="culture-images3">
+                            <img src="images/office-images/image3.jpg">
+                        </div>
+                        <div class="culture-images4">
+                            <img src="images/office-images/image4.jpg">
+                        </div>
+                        <div class="culture-images5">
+                            <img src="images/office-images/image5.jpg">
+                        </div>
+                        <div class="culture-images6">
+                            <img src="images/office-images/image6.jpg">
+                        </div>
+						<div class="culture-images7">
+							<img src="images/office-images/image7.jpg">
+						</div>
+                    </div>
+					<div id="rcorners">
+						<span>12</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="odd main-cont-foster">
+				<div class="shadow-odd"></div>
+				<div class="overlay"></div>
+				<div class="content-page">
+					<div class="demo">
+						<h3>We foster a learning environment & nurture innovative thinking</h3>
+					</div>
+                    <div class="foster-image-container">
+                        <div class="foster-images1">
+                            <img src="images/foster-images/img1.jpg">
+                        </div>
+                        <div class="foster-images2">
+                            <img src="images/foster-images/img2.jpg">
+                        </div>
+                        <div class="foster-images3">
+                            <img src="images/foster-images/img3.jpg">
+                        </div>
+                        <div class="foster-images4">
+                            <img src="images/foster-images/img4.jpg">
+                        </div>
+                        <div class="foster-images5">
+                            <img src="images/foster-images/img5.jpg">
+                        </div>
+                        <div class="foster-images6">
+                            <img src="images/foster-images/img6.jpg">
+                        </div>
+                        <div class="foster-images7">
+                            <img src="images/foster-images/img7.jpg">
+                        </div>
+						<div class="foster-images8">
+							<img src="images/foster-images/img8.jpg">
+						</div>
+                    </div>
+					<div id="rcorners">
+						<span>13</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="even main-cont-fun">
+				<div class="shadow-even"></div>
+				<div class="content-page">
+					<div class="demo">
+						<h3>Fun @ Pepcus</h3>
+					</div>
+					<div class="fun-image-container">
+					<div class="fun-images1">
+						<img src="images/fun-images/funimg1.jpg">
+						<img class="backimages" src="images/fun-images/funimg2.jpg">
+					</div>
+					<div class="fun-images2">
+						<img src="images/fun-images/funimg3.jpg">
+						<img class="backimages"  src="images/fun-images/funimg4.jpg">
+					</div>
+					<div class="fun-images3">
+						<img src="images/fun-images/funimg5.jpg">
+						<img class="backimages" src="images/fun-images/funimg6.jpg">
+					</div>
+					</div>
+					<div id="rcorners">
+						<span>14</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="odd main-cont-contact">
+				<div class="shadow-odd"></div>
+				<div class="content-page-address">
+					<p class="address">
+						Pepcus Software Services Pvt. Ltd.</br>
+						15 FM, Sector-F, Ring-road,</br>
+								Behind Arpit Hospital,Scheme 94,</br>
+								Indore,Madhya Pradesh 452016
+					</p>
+					<div class="footer">
+						<a target="_blank" class="fa fa-linkedin"></a>
+						<a target="_blank" class=" fa fa-facebook"></a>
+						<a target="_blank" class=" fa fa-instagram"></a>
+						<a target="_blank" class=" fa fa-youtube"></a>
+						<a target="_blank" class=" fa fa-twitter"></a>
+						<div class="footerlink">
+							<a class=" fa fa-envelope">info@pepcus.com</a>
+							<a class="fa fa-globe">careers@pepcus.com</a>
+						</div>
+					</div>
+					<div class="map-container">
+						<div class="map-content" style='overflow:hidden;'>
+							<div id='gmap_canvas' style='height:440px;width:100%;'></div>
+							<style>
+								#gmap_canvas img {
+									max-width: none!important;
+									background: none!important
+								}
+							</style>
+						</div>
+					</div>
+
+					<div id="rcorners">
+						<span>15</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="even main-cont-thanks">
+				<div class="card-block-thanks">
+					<p class="thanks white">Thanks!!</p>
+					<h2>Pepcus Software Services Pvt. Ltd.</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCIMp6rwcAOunaTDtLT2oLQMzJJgheFobw"></script>
+<script type="text/javascript">
+	function init_map() {
+		var myOptions = {
+			zoom: 13,
+			center: new google.maps.LatLng(22.712438, 75.906379),
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+		marker = new google.maps.Marker({
+			map: map,
+			position: new google.maps.LatLng(22.712438, 75.906379)
+		});
+		infowindow = new google.maps.InfoWindow({
+			content: '<strong>Pepcus Software Services Private Limited.</strong><br>15-FM, Sector-F, Ring Rd, behind Arpit Hospital, Scheme 94, Indore, Madhya Pradesh 452016<br>'
+		});
+		google.maps.event.addListener(marker, 'click', function() {
+			infowindow.open(map, marker);
+		});
+		infowindow.open(map, marker);
+	}
+	google.maps.event.addDomListener(window, 'load', init_map);
+</script>
+<script type="text/javascript">
+
+function loadApp() {
+
+ 	$('#canvas').fadeIn(1000);
+
+ 	var flipbook = $('.magazine');
+
+ 	// Check if the CSS was already loaded
+	
+	if (flipbook.width()==0 || flipbook.height()==0) {
+		setTimeout(loadApp, 10);
+		return;
+	}
+	
+	// Create the flipbook
+
+	flipbook.turn({
+			
+			// Magazine width
+
+			width: 1422,
+
+			// Magazine height
+
+			height: 550,
+
+			// Duration in millisecond
+
+			duration: 1000,
+
+			// Hardware acceleration
+
+			acceleration: !isChrome(),
+
+			// Enables gradients
+
+			gradients: false,
+			
+			// Auto center this flipbook
+
+			autoCenter: true,
+
+			// Elevation from the edge of the flipbook when turning a page
+
+			elevation: 50,
+
+			// The number of pages
+
+			pages: 14,
+
+			// Events
+
+			when: {
+				turning: function(event, page, view) {
+					
+					var book = $(this),
+					currentPage = book.turn('page'),
+					pages = book.turn('pages');
+			
+					// Update the current URI
+
+					Hash.go('page/' + page).update();
+
+					// Show and hide navigation buttons
+
+					disableControls(page);
+				},
+
+				turned: function(event, page, view) {
+
+					disableControls(page);
+
+					$(this).turn('center');
+
+					if (page==1) { 
+						$(this).turn('peel', 'br');
+					}
+
+				},
+
+				missing: function (event, pages) {
+
+					// Add pages that aren't in the magazine
+
+					for (var i = 0; i < pages.length; i++)
+						addPage(pages[i], $(this));
+
+				}
+			}
+
+	});
+
+	// Zoom.js
+
+	// $('.magazine-viewport').zoom({
+	// 	flipbook: $('.magazine'),
+	//
+	// 	max: function() {
+	//
+	// 		return largeMagazineWidth()/$('.magazine').width();
+	//
+	// 	},
+	//
+	// 	when: {
+	//
+	// 		swipeLeft: function() {
+	//
+	// 			$(this).zoom('flipbook').turn('next');
+	//
+	// 		},
+	//
+	// 		swipeRight: function() {
+	//
+	// 			$(this).zoom('flipbook').turn('previous');
+	//
+	// 		},
+	//
+	// 		resize: function(event, scale, page, pageElement) {
+	//
+	// 			if (scale==1)
+	// 				loadSmallPage(page, pageElement);
+	// 			else
+	// 				loadLargePage(page, pageElement);
+	//
+	// 		},
+	//
+	// 		zoomIn: function () {
+	//
+	// 			$('.thumbnails').hide();
+	// 			$('.made').hide();
+	// 			$('.magazine').removeClass('animated').addClass('zoom-in');
+	// 			$('.zoom-icon').removeClass('zoom-icon-in').addClass('zoom-icon-out');
+	//
+	// 			if (!window.escTip && !$.isTouch) {
+	// 				escTip = true;
+	//
+	// 				$('<div />', {'class': 'exit-message'}).
+	// 					html('<div>Press ESC to exit</div>').
+	// 						appendTo($('body')).
+	// 						delay(2000).
+	// 						animate({opacity:0}, 500, function() {
+	// 							$(this).remove();
+	// 						});
+	// 			}
+	// 		},
+	//
+	// 		zoomOut: function () {
+	//
+	// 			$('.exit-message').hide();
+	// 			$('.thumbnails').fadeIn();
+	// 			$('.made').fadeIn();
+	// 			$('.zoom-icon').removeClass('zoom-icon-out').addClass('zoom-icon-in');
+	//
+	// 			setTimeout(function(){
+	// 				$('.magazine').addClass('animated').removeClass('zoom-in');
+	// 				resizeViewport();
+	// 			}, 0);
+	//
+	// 		}
+	// 	}
+	// });
+	//
+	// // Zoom event
+	//
+	// if ($.isTouch)
+	// 	$('.magazine-viewport').bind('zoom.doubleTap', zoomTo);
+	// else
+	// 	$('.magazine-viewport').bind('zoom.tap', zoomTo);
+
+
+	// Using arrow keys to turn the page
+
+	$(document).keydown(function(e){
+
+		var previous = 37, next = 39, esc = 27;
+
+		switch (e.keyCode) {
+			case previous:
+
+				// left arrow
+				$('.magazine').turn('previous');
+				e.preventDefault();
+
+			break;
+			case next:
+
+				//right arrow
+				$('.magazine').turn('next');
+				e.preventDefault();
+
+			break;
+			case esc:
+				
+				$('.magazine-viewport').zoom('zoomOut');	
+				e.preventDefault();
+
+			break;
+		}
+	});
+
+	// URIs - Format #/page/1 
+
+	Hash.on('^page\/([0-9]*)$', {
+		yep: function(path, parts) {
+			var page = parts[1];
+
+			if (page!==undefined) {
+				if ($('.magazine').turn('is'))
+					$('.magazine').turn('page', page);
+			}
+
+		},
+		nop: function(path) {
+
+			if ($('.magazine').turn('is'))
+				$('.magazine').turn('page', 1);
+		}
+	});
+
+
+	$(window).resize(function() {
+		resizeViewport();
+	}).bind('orientationchange', function() {
+		resizeViewport();
+	});
+
+	// Events for thumbnails
+
+	$('.thumbnails').click(function(event) {
+		
+		var page;
+
+		if (event.target && (page=/page-([0-9]+)/.exec($(event.target).attr('class'))) ) {
+		
+			$('.magazine').turn('page', page[1]);
+		}
+	});
+
+	$('.thumbnails li').
+		bind($.mouseEvents.over, function() {
+			
+			$(this).addClass('thumb-hover');
+
+		}).bind($.mouseEvents.out, function() {
+			
+			$(this).removeClass('thumb-hover');
+
+		});
+
+	if ($.isTouch) {
+	
+		$('.thumbnails').
+			addClass('thumbanils-touch').
+			bind($.mouseEvents.move, function(event) {
+				event.preventDefault();
+			});
+
+	} else {
+
+		$('.thumbnails ul').mouseover(function() {
+
+			$('.thumbnails').addClass('thumbnails-hover');
+
+		}).mousedown(function() {
+
+			return false;
+
+		}).mouseout(function() {
+
+			$('.thumbnails').removeClass('thumbnails-hover');
+
+		});
+
+	}
+
+
+	// Regions
+
+	if ($.isTouch) {
+		$('.magazine').bind('touchstart', regionClick);
+	} else {
+		$('.magazine').click(regionClick);
+	}
+
+	// Events for the next button
+
+	$('.next-button').bind($.mouseEvents.over, function() {
+		
+		$(this).addClass('next-button-hover');
+
+	}).bind($.mouseEvents.out, function() {
+		
+		$(this).removeClass('next-button-hover');
+
+	}).bind($.mouseEvents.down, function() {
+		
+		$(this).addClass('next-button-down');
+
+	}).bind($.mouseEvents.up, function() {
+		
+		$(this).removeClass('next-button-down');
+
+	}).click(function() {
+		
+		$('.magazine').turn('next');
+
+	});
+
+	// Events for the next button
+	
+	$('.previous-button').bind($.mouseEvents.over, function() {
+		
+		$(this).addClass('previous-button-hover');
+
+	}).bind($.mouseEvents.out, function() {
+		
+		$(this).removeClass('previous-button-hover');
+
+	}).bind($.mouseEvents.down, function() {
+		
+		$(this).addClass('previous-button-down');
+
+	}).bind($.mouseEvents.up, function() {
+		
+		$(this).removeClass('previous-button-down');
+
+	}).click(function() {
+		
+		$('.magazine').turn('previous');
+
+	});
+
+
+	resizeViewport();
+
+	$('.magazine').addClass('animated');
+
+}
+
+// Zoom icon
+
+ $('.zoom-icon').bind('mouseover', function() { 
+ 	
+ 	if ($(this).hasClass('zoom-icon-in'))
+ 		$(this).addClass('zoom-icon-in-hover');
+
+ 	if ($(this).hasClass('zoom-icon-out'))
+ 		$(this).addClass('zoom-icon-out-hover');
+ 
+ }).bind('mouseout', function() { 
+ 	
+ 	 if ($(this).hasClass('zoom-icon-in'))
+ 		$(this).removeClass('zoom-icon-in-hover');
+ 	
+ 	if ($(this).hasClass('zoom-icon-out'))
+ 		$(this).removeClass('zoom-icon-out-hover');
+
+ }).bind('click', function() {
+
+ 	if ($(this).hasClass('zoom-icon-in'))
+ 		$('.magazine-viewport').zoom('zoomIn');
+ 	else if ($(this).hasClass('zoom-icon-out'))	
+		$('.magazine-viewport').zoom('zoomOut');
+
+ });
+
+ $('#canvas').hide();
+
+
+// Load the HTML4 version if there's not CSS transform
+
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['js/turn.js'],
+	nope: ['js/turn.html4.min.js'],
+	both: ['js/zoom.min.js', 'js/magazine.js', 'css/magazine.css'],
+	complete: loadApp
+});
+
+</script>
+
+</body>
+</html>
