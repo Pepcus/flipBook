@@ -11,6 +11,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Alice&display=swap" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap" rel="stylesheet">
 <script type="text/javascript" src="js/jquery.min.1.7.js"></script>
 <script type="text/javascript" src="js/modernizr.2.5.3.min.js"></script>
 <script type="text/javascript" src="js/hash.js"></script>
@@ -653,16 +654,16 @@ function loadApp() {
  	var flipbook = $('.magazine');
 
  	// Check if the CSS was already loaded
-	
+
 	if (flipbook.width()==0 || flipbook.height()==0) {
 		setTimeout(loadApp, 10);
 		return;
 	}
-	
+
 	// Create the flipbook
 
 	flipbook.turn({
-			
+
 			// Magazine width
 
 			width: 1422,
@@ -682,7 +683,7 @@ function loadApp() {
 			// Enables gradients
 
 			gradients: false,
-			
+
 			// Auto center this flipbook
 
 			autoCenter: true,
@@ -699,11 +700,11 @@ function loadApp() {
 
 			when: {
 				turning: function(event, page, view) {
-					
+
 					var book = $(this),
 					currentPage = book.turn('page'),
 					pages = book.turn('pages');
-			
+
 					// Update the current URI
 
 					Hash.go('page/' + page).update();
@@ -719,7 +720,7 @@ function loadApp() {
 
 					$(this).turn('center');
 
-					if (page==1) { 
+					if (page==1) {
 						$(this).turn('peel', 'br');
 					}
 
@@ -837,15 +838,15 @@ function loadApp() {
 
 			break;
 			case esc:
-				
-				$('.magazine-viewport').zoom('zoomOut');	
+
+				$('.magazine-viewport').zoom('zoomOut');
 				e.preventDefault();
 
 			break;
 		}
 	});
 
-	// URIs - Format #/page/1 
+	// URIs - Format #/page/1
 
 	Hash.on('^page\/([0-9]*)$', {
 		yep: function(path, parts) {
@@ -874,28 +875,28 @@ function loadApp() {
 	// Events for thumbnails
 
 	$('.thumbnails').click(function(event) {
-		
+
 		var page;
 
 		if (event.target && (page=/page-([0-9]+)/.exec($(event.target).attr('class'))) ) {
-		
+
 			$('.magazine').turn('page', page[1]);
 		}
 	});
 
 	$('.thumbnails li').
 		bind($.mouseEvents.over, function() {
-			
+
 			$(this).addClass('thumb-hover');
 
 		}).bind($.mouseEvents.out, function() {
-			
+
 			$(this).removeClass('thumb-hover');
 
 		});
 
 	if ($.isTouch) {
-	
+
 		$('.thumbnails').
 			addClass('thumbanils-touch').
 			bind($.mouseEvents.move, function(event) {
@@ -932,47 +933,47 @@ function loadApp() {
 	// Events for the next button
 
 	$('.next-button').bind($.mouseEvents.over, function() {
-		
+
 		$(this).addClass('next-button-hover');
 
 	}).bind($.mouseEvents.out, function() {
-		
+
 		$(this).removeClass('next-button-hover');
 
 	}).bind($.mouseEvents.down, function() {
-		
+
 		$(this).addClass('next-button-down');
 
 	}).bind($.mouseEvents.up, function() {
-		
+
 		$(this).removeClass('next-button-down');
 
 	}).click(function() {
-		
+
 		$('.magazine').turn('next');
 
 	});
 
 	// Events for the next button
-	
+
 	$('.previous-button').bind($.mouseEvents.over, function() {
-		
+
 		$(this).addClass('previous-button-hover');
 
 	}).bind($.mouseEvents.out, function() {
-		
+
 		$(this).removeClass('previous-button-hover');
 
 	}).bind($.mouseEvents.down, function() {
-		
+
 		$(this).addClass('previous-button-down');
 
 	}).bind($.mouseEvents.up, function() {
-		
+
 		$(this).removeClass('previous-button-down');
 
 	}).click(function() {
-		
+
 		$('.magazine').turn('previous');
 
 	});
@@ -986,19 +987,19 @@ function loadApp() {
 
 // Zoom icon
 
- $('.zoom-icon').bind('mouseover', function() { 
- 	
+ $('.zoom-icon').bind('mouseover', function() {
+
  	if ($(this).hasClass('zoom-icon-in'))
  		$(this).addClass('zoom-icon-in-hover');
 
  	if ($(this).hasClass('zoom-icon-out'))
  		$(this).addClass('zoom-icon-out-hover');
- 
- }).bind('mouseout', function() { 
- 	
+
+ }).bind('mouseout', function() {
+
  	 if ($(this).hasClass('zoom-icon-in'))
  		$(this).removeClass('zoom-icon-in-hover');
- 	
+
  	if ($(this).hasClass('zoom-icon-out'))
  		$(this).removeClass('zoom-icon-out-hover');
 
@@ -1006,7 +1007,7 @@ function loadApp() {
 
  	if ($(this).hasClass('zoom-icon-in'))
  		$('.magazine-viewport').zoom('zoomIn');
- 	else if ($(this).hasClass('zoom-icon-out'))	
+ 	else if ($(this).hasClass('zoom-icon-out'))
 		$('.magazine-viewport').zoom('zoomOut');
 
  });
